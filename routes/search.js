@@ -10,7 +10,7 @@ var match = function(str) {
 };
 
 router.get('/', function(req, res) {
-  var query = req.param('query');
+  var query = req.param('query') || '';
   res.json(match(query));
 });
 
