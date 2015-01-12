@@ -9,7 +9,6 @@ var match = function(str) {
   });
 };
 
-/* GET users listing. */
 router.get('/', function(req, res) {
   var query = req.param('query');
   res.json(match(query));
