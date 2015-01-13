@@ -2,6 +2,9 @@
 
 This is a super simple node server for providing auto complete functionality for Magic the Gathering Card Names.
 
+
+Demo: [http://automagically.herokuapp.com/search?query=garruk](http://automagically.herokuapp.com/search?query=garruk)
+
 To run the project:
 <code>node bin/www</code>
 
@@ -18,7 +21,9 @@ Otherwise just provide a query param to do a naive autocomplete search for that 
 /search?query=garruk
 </code>
 
-Will Return the following: 
+
+
+Will Return the following:
 <code>
 [
 "Garruk Wildspeaker",
@@ -32,4 +37,6 @@ Will Return the following:
 "Garruk, the Veil-Cursed"
 ]
 </code>
+
+The
 
