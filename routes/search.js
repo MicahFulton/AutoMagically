@@ -2,10 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 var cardJson = require('../AllCards');
+var cardArr = Object.keys(cardJson);
 
 var match = function(str) {
-  return Object.keys(cardJson).filter(function(item) {
+  return cardArr.filter(function(item) {
     return item.toLowerCase().indexOf(str.toLowerCase()) === 0;
+  })
+  .map(function(item) {
+    return cardJson[item];
   });
 };
 
